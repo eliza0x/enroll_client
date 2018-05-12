@@ -1,0 +1,69 @@
+html
+  font-size: 62.5%
+
+body
+  margin: 18px
+  font-family: 'Inconsolata', monospace
+  font-size: 1.8rem
+  background-color: #444
+  color: #ccc
+
+li
+  margin: 3px
+  list-style: none
+
+.notify
+  // color: rgb(184, 214, 0)
+  color: #3eb370
+
+
+.wrapper
+  display: grid
+  grid-template-columns: 7fr 3fr
+  grid-template-rows: 1fr 100fr 1fr
+  height: 95vh
+
+#main
+  grid-column: 1 / 2
+  grid-row: 2 / 3
+  margin: 20px
+
+#sidepane
+  border-left: 1px solid #ccc
+  grid-column: 2 / 3
+  grid-row: 2 / 3
+
+#states
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  padding: 15px
+
+.logo
+  padding: 10px
+  margin: 15px
+  margin-bottom: 30px
+  margin-left: 30px
+  line-height: 35px
+  font-weight: 400px
+  font-family: 'Nunito'
+  text-transform: uppercase
+  color: rgba(204, 204, 204, 0.7)
+
+.box
+  border-radius: 10px
+  padding: 10px
+  margin: 10px
+  font-size: 2rem
+
+.学内
+  border: solid 5px rgba(77, 90, 175, 1)
+
+.帰宅
+  border: solid 5px rgba(77, 90, 175, 0.5)
+
+.一時退室
+  border: solid 5px rgba(77, 90, 175, 0.1)
+
+.在室
+  border: solid 5px rgba(192, 198, 201, 0.1)
+

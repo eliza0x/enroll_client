@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title
+      | 在籍管理システム
+    link[rel="stylesheet" type="text/css" href="style.css"]
+    link[href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"]
+    script[src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"]
+  body
+    div#app.wrapper
+      div#main
+        div#states
+          div.box[v-for="update in updates" :key="update.id" v-bind:class="[update.class, update.state]"]
+            div.name
+              = "{{ update.name }} - {{ update.time }}"
+            div.state
+             = "{{ update.state }}"
+
+
+      div#sidepane
+        h1.logo 
+          | Enrollment management system
+        ul#log
+          li[v-for="update in log" :key="update.id" v-bind:class="update.class"]
+            = "{{ update.text }}"
+    script[type="text/javascript" src="/src/main.js"]
+
