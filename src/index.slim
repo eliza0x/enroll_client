@@ -5,6 +5,8 @@ html
       | 在籍管理システム
     link[rel="stylesheet" type="text/css" href="style.css"]
     link[href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"]
+    link[href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet"]
+    link[href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet"]
     script[src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"]
   body
     div#app.wrapper
@@ -12,7 +14,7 @@ html
         div#states
           div.box[v-for="update in updates" :key="update.id" v-bind:class="[update.class, update.state]"]
             div.name
-              = "{{ update.name }} - {{ update.time }}"
+              = "{{ update.name }}"
             div.state
              = "{{ update.state }}"
 
